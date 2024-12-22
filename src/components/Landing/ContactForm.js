@@ -21,7 +21,7 @@ export const ContactForm = () => {
           />
           <button
             type="submit"
-            className="bg-gray-800 text-white py-3 px-6 rounded-md hover:bg-gray-700"
+            className="bg-customOrange text-dark py-3 px-6 rounded-md hover:bg-gray-700 hover:text-white"
           >
             Enviar
           </button>

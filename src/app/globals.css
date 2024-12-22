@@ -19,3 +19,12 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.mySwiper {
+  max-width: 300px; /* Limitar el ancho del carrusel inferior */
+}
+
+.mySwiper2 {
+  max-width: 300px; /* Limitar el ancho del carrusel superior */
+  margin-bottom: 20px;
+}

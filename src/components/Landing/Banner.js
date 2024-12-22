@@ -1,12 +1,17 @@
-import Image from "next/image";
+'use client';
+import Image from 'next/image';
 
 export const Banner = () => {
   return (
     <div
-      className="bg-cover bg-center h-screen w-screen flex items-center justify-center text-center"
-      style={{ backgroundImage: "url('/food_car.png')" }}
+      className="bg-cover bg-center h-screen w-screen flex items-center justify-end text-center p-20"
+      style={{backgroundImage: "url('/food_car.jpg')"}}
     >
-      <h1 className="text-4xl md:text-6xl font-bold text-white">Minitrail</h1>
+      <img
+        src="./logominitrail.png"
+        alt="Minitrail"
+        className=" md:h-[500px] object-cover rounded-lg shadow-lg"
+      />
     </div>
   );
 };
