@@ -17,7 +17,7 @@ export const ProductSectionInv = ({productData}) => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   return (
-    <section className="bg-gray-800 py-20">
+    <section className="bg-customBlack py-20">
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
         <div className="md:col-span-2 relative">
           {/* Carrusel de imágenes principales */}
@@ -64,11 +64,14 @@ export const ProductSectionInv = ({productData}) => {
             ))}
           </Swiper>
         </div>
-        <div className="md:col-span-3">
-          <h3 className="text-2xl font-bold text-white mb-4">
+        <a
+          className="md:col-span-3 cursor-pointer"
+          href={`/products/${productData.slug}`}
+        >
+          <h3 className="text-2xl font-bold text-white mb-4 text-center">
             {productData.title}
           </h3>
-          <p className="text-gray-500 text-lg">
+          <p className="text-white text-lg text-center">
             {/* Separa el texto en un array usando '\n' y luego mapea los elementos con <br /> */}
             {productData?.description.split('\n').map((line, index) => (
               <span key={index}>
@@ -77,7 +80,7 @@ export const ProductSectionInv = ({productData}) => {
               </span>
             ))}
           </p>
-        </div>
+        </a>
       </div>
     </section>
   );

@@ -20,11 +20,14 @@ export const ProductSection = ({productData}) => {
     <section className="py-16">
       <div className="max-w-7xl mx-auto px-4 flex flex-col-reverse md:flex-row gap-8 items-center">
         {/* Contenedor de texto */}
-        <div className="md:col-span-3 md:order-1">
-          <h3 className="text-2xl font-bold text-gray-800 mb-4">
+        <a
+          className="md:col-span-3 md:order-1 cursor-pointer"
+          href={`/products/${productData.slug}`}
+        >
+          <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
             {productData.title}
           </h3>
-          <p className="text-gray-600 text-lg">
+          <p className="text-gray-600 text-lg text-center">
             {/* Separa el texto en un array usando '\n' y luego mapea los elementos con <br /> */}
             {productData?.description.split('\n').map((line, index) => (
               <span key={index}>
@@ -33,7 +36,7 @@ export const ProductSection = ({productData}) => {
               </span>
             ))}
           </p>
-        </div>
+        </a>
 
         {/* Contenedor de imágenes (carrusel) */}
         <div className="md:col-span-2  md:order-2 relative">
