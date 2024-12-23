@@ -4,20 +4,50 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  /* --foreground: #171717; */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
-    --foreground: #ededed;
+    /* --foreground: #ededed; */
   }
+}
+
+* {
+  box-sizing: border-box; /* Asegura que padding y border no incrementen el tamaño */
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  scrollbar-width: thin; /* Scroll fino para Firefox */
+  scrollbar-color: '#ffad31';
+}
+
+/* Estilos específicos para navegadores basados en WebKit */
+body::-webkit-scrollbar {
+  width: 10px; /* Ancho del scroll vertical */
+}
+
+body::-webkit-scrollbar-track {
+  background: '#ffad31'; /* Color de fondo del track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: '#ffad31'; /* Color del scroll */
+  border-radius: 5px; /* Bordes redondeados */
+  border: 2px solid '#ffad31'; /* Espacio entre el thumb y el track */
+}
+
+.container {
+  max-width: 100%; /* Limita el ancho del contenedor */
+  overflow-x: hidden; /* Previene desbordamiento */
 }
 
 .mySwiper {
@@ -27,4 +57,23 @@ body {
 .mySwiper2 {
   max-width: 300px; /* Limitar el ancho del carrusel superior */
   margin-bottom: 20px;
+}
+
+.mySwiperDetail {
+  max-width: 450px; /* Limitar el ancho del carrusel inferior */
+}
+
+.mySwiperDetail2 {
+  max-width: 450px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .mySwiperDetail {
+    max-width: 300px; /* Limitar el ancho del carrusel inferior */
+  }
+
+  .mySwiperDetail2 {
+    max-width: 300px;
+  }
 }
