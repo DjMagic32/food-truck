@@ -44,6 +44,12 @@ export const About = () => {
           <br /> <br />
           Contacto.minitrail@gmail.com
         </p>
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3299.07928373532!2d-58.916556225235695!3d-34.22099393738522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bb6fdbcccb9719%3A0x790879312e552210!2sE.%20Gonz%C3%A1lez%20213%2C%20Campana%2C%20Provincia%20de%20Buenos%20Aires%2C%20Argentina!5e0!3m2!1ses!2sve!4v1735409270927!5m2!1ses!2sve"
+          loading="lazy"
+          className="w-full h-96 mt-8"
+        ></iframe>
       </div>
     </div>
   );
