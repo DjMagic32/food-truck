@@ -22,25 +22,25 @@ export async function POST(req) {
       );
     }
 
-    // const transporter = nodemailer.createTransport({
-    //   service: 'gmail',
-    //   // host: 'smtp.ethereal.email',
-    //   // port: 587,
-    //   auth: {
-    //     user: 'contacto.minitrail@gmail.com',
-    //     pass: 'yccb qgfb qyly emqi',
-    //   },
-    // });
-
-    // Configurar el transportador de Nodemailer
     const transporter = nodemailer.createTransport({
-      host: 'smtp.ethereal.email',
-      port: 587,
+      service: 'gmail',
+      // host: 'smtp.ethereal.email',
+      // port: 587,
       auth: {
-        user: 'angel.rohan@ethereal.email',
-        pass: '4xsEGgBhrdCaVgSp5c',
+        user: 'contacto.minitrail@gmail.com',
+        pass: 'yccb qgfb qyly emqi',
       },
     });
+
+    // Configurar el transportador de Nodemailer
+    // const transporter = nodemailer.createTransport({
+    //   host: 'smtp.ethereal.email',
+    //   port: 587,
+    //   auth: {
+    //     user: 'angel.rohan@ethereal.email',
+    //     pass: '4xsEGgBhrdCaVgSp5c',
+    //   },
+    // });
 
     // Configuración del correo
     const mailOptions = {
