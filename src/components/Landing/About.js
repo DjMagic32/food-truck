@@ -1,7 +1,7 @@
 'use client';
 export const About = () => {
   return (
-    <div className="py-16 bg-gray-100 h-[100vh] w-full">
+    <div className="py-16 bg-gray-100 h-[100%] w-full">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Sobre Nosotros
@@ -40,7 +40,7 @@ export const About = () => {
           confianza y respaldo en tu proyecto. Escribinos para poneros en
           contacto y asesorarte.
           <br /> <br />
-          Teléfono: (3489)485945
+          Teléfono: +56 9 (3489) 485945
           <br /> <br />
           Contacto.minitrail@gmail.com
         </p>

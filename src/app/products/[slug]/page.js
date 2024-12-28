@@ -9,8 +9,11 @@ export async function generateStaticParams() {
 }
 
 // Componente del producto
-const ProductoDetalle = ({params}) => {
-  const product = products.find(product => product?.slug === params?.slug);
+const ProductoDetalle = async ({params}) => {
+  const {slug} = await params;
+  //const product = products.find(product => product?.slug === params?.slug);
+
+  const product = products.find(product => product?.slug === slug);
 
   if (!product) {
     return <div>Producto no encontrado</div>; // Manejo de error simple
