@@ -85,7 +85,7 @@ export const Banner = () => {
 
   return (
     <div
-      className="bg-cover bg-center h-screen flex md:items-center items-start md:justify-start justify-center text-center p-20"
+      className="bg-cover bg-center h-screen flex md:items-center items-start md:justify-start justify-center text-center md:p-20 p-1"
       style={{backgroundImage: `url('${imageUrl}')`}}
     >
       <div className="flex flex-col items-center md:items-start justify-center md:justify-center  h-[100%] md:w-[50%] w-[100%]">
@@ -112,7 +112,7 @@ export const Banner = () => {
         {/* Condicionalmente renderizar el carrusel de imágenes solo si isMobile es true */}
         {isMobile && (
           <motion.div
-            className=" md:flex-none flex p-10" // Ajusta el tamaño de la imagen
+            className=" md:flex-none flex p-10 overflow-visible" // Ajusta el tamaño de la imagen
             key={`image-${currentIndex}`} // Clave única para la imagen
             initial="hidden"
             animate="visible"

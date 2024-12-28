@@ -12,10 +12,10 @@ export async function POST(req) {
   try {
     // Leer el body de la solicitud
     const body = await req.json();
-    const {nombre, email, mensaje} = body;
+    const {nombre, email, telefono, mensaje} = body;
 
     // Validar los datos recibidos
-    if (!nombre || !email || !mensaje) {
+    if (!nombre || !email || !telefono || !mensaje) {
       return new Response(
         JSON.stringify({error: 'Faltan datos en la solicitud'}),
         {status: 400, headers: {'Content-Type': 'application/json'}},
@@ -27,26 +27,27 @@ export async function POST(req) {
       // host: 'smtp.ethereal.email',
       // port: 587,
       auth: {
-        user: 'frankoocarp22@gmail.com',
-        pass: 'swam zyyw qmwk duch',
+        user: 'contacto.minitrail@gmail.com',
+        pass: 'yccb qgfb qyly emqi',
       },
     });
 
     // Configurar el transportador de Nodemailer
     // const transporter = nodemailer.createTransport({
-    //   service: 'gmail', // O el servicio SMTP que uses
+    //   host: 'smtp.ethereal.email',
+    //   port: 587,
     //   auth: {
-    //     user: process.env.EMAIL_USER, // Tu correo electrónico
-    //     pass: process.env.EMAIL_PASS, // Contraseña o app password
+    //     user: 'angel.rohan@ethereal.email',
+    //     pass: '4xsEGgBhrdCaVgSp5c',
     //   },
     // });
 
     // Configuración del correo
     const mailOptions = {
-      from: `frankoocarp22@gmail.com`, // Tu correo electrónico
-      to: `frankoocarp22@gmail.com`, // Correo del destinatario
+      from: `contacto.minitrail@gmail.com`, // Tu correo electrónico
+      to: `contacto.minitrail@gmail.com`, // Correo del destinatario
       subject: `Nuevo mensaje de ${nombre}`,
-      text: `Mensaje de ${nombre} (${email}):\n\n${mensaje}`,
+      text: `Nombre: ${nombre}\n\nCorreo: ${email}\n\nTeléfono: ${telefono}\n\nMensaje: ${mensaje}`,
     };
 
     // Enviar el correo

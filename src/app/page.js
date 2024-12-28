@@ -50,7 +50,7 @@ export default function Home() {
   // Función para abrir WhatsApp con el mensaje predefinido
   const handleWhatsAppClick = () => {
     console.log('WhatsApp');
-    const phoneNumber = '(3489)485945'; // Número de teléfono
+    const phoneNumber = '+5493489485945'; // Número de teléfono
     const message = 'Hola! Me gustaría tener más información'; // Mensaje predefinido
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message,

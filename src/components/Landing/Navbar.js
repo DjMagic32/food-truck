@@ -1,6 +1,7 @@
 'use client';
 import {MinitrailIcon} from '@/icons/icons';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const Navbar = () => {
   return (
@@ -8,10 +9,11 @@ export const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center justify-start">
-          <img
-            src="./logominitrail.png"
+          <Image
+            src="/logominitrail.png"
+            height={50}
+            width={50}
             alt="Minitrail"
-            className="h-[50px] object-cover rounded-lg shadow-lg"
           />
         </Link>
 
