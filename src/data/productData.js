@@ -25,7 +25,7 @@ export const churrosCar = {
   features:
     '\n\nIncluye:\n\n- Toldos de 1,40 m\n- Olla de fritura de aluminio\n- Quemador a alta presión\n- 4 Rellenadoras de 2 L\n- Compartimiento para tanque de gas (13 kg)\n- 2 llantas con cámara de aire\n- 2 ruedas giratorias\n\nMedidas:\n\n- Altura: 2,12 m\n- Ancho: 74 cm\n- Largo: 1,10 m\n\nNotas:\n- Imágenes ilustrativas.\n',
   description:
-    'Carrito gourmet completo para churros, con una churrera a tornillo y 4 rellenadoras de aluminio. Equipado con toldos, una olla de fritura, y un quemador de alta presión, este carrito es ideal para ofrecer churros crujientes y deliciosos.',
+    'Carrito Gourmet completo para churros, con una churrera a tornillo y 4 rellenadoras de aluminio. Equipado con toldos, una olla de fritura, y un quemador de alta presión, este carrito es ideal para ofrecer churros crujientes y deliciosos.',
   images: [
     {src: '/carrosChurrosWhatsapp/carro churro 1.jpg', alt: 'Producto 1'},
     {src: '/carrosChurrosWhatsapp/carro churro 1.jpg', alt: 'Producto 2'},
